@@ -1,6 +1,6 @@
 import logging
 
-from odoo import models, fields
+from odoo import fields, models
 
 _loger = logging.getLogger(__name__)
 
@@ -12,3 +12,6 @@ class patient(models.Model):
     name = fields.Char()
     active = fields.Boolean(default=True, )
     isbn = fields.Char()
+
+    card_patient_ids = fields.Many2many(
+        comodel_name='hr_hospital.card_patient',)

@@ -7,12 +7,10 @@
             web_icon="hr_hospital,static/description/icon.png"
             name="Hospital" sequence="300"/>
 
-  <menuitem id="hr_hospital_patient_menu"
+  <menuitem id="hospital_menu"
             parent="hr_hospital_main_menu"
-            name="Пацієнти" sequence="100"/>
+            name="Hospital" sequence="100"/>
 
-  <menuitem id="hr_hospital_doctors_menu"
-            parent="hr_hospital_main_menu"
-            name="Лікарі" sequence="150"/>
+
 
 </odoo>
