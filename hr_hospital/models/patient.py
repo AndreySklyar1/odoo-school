@@ -13,5 +13,6 @@ class patient(models.Model):
     active = fields.Boolean(default=True, )
     isbn = fields.Char()
 
-    card_patient_ids = fields.Many2many(
-        comodel_name='hr_hospital.card_patient',)
+    # card_patient_ids = fields.Many2many(
+    #     comodel_name='hr_hospital.card_patient',)
+    card_patient_ids = fields.Many2one('hr_hospital.card_patient', 'Картка')

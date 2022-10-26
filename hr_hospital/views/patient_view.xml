@@ -23,7 +23,8 @@
                                         <group>
                                                 <field name="name"/>
                                                 <field name="isbn"/>
-                                                <field name="card_patient_ids" widget="many2many_tags"/>
+                                                <field name="card_patient_ids"/>
+
                                         </group>
                                 </sheet>
                         </form>
